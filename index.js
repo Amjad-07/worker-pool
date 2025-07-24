@@ -1,6 +1,6 @@
 const mysql = require('mysql2');
 const conn = mysql.createConnection({
-  host: 'PRIVATE_SQL_IP', // replace later
+  host: '10.171.112.3', // replace later
   user: 'testuser',
   password: 'testpass',
   database: 'testdb'
