@@ -1,0 +1,6 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/amjad-id-1/sql-app', '.']
+options:
+  pool:
+    name: 'projects/amjad-id-1/locations/us-central1/workerPools/private-worker-pool'
