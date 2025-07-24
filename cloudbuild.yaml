@@ -1,6 +1,8 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/amjad-id-1/sql-app', '.']
+
 options:
+  logging: CLOUD_LOGGING_ONLY
   pool:
     name: 'projects/amjad-id-1/locations/us-central1/workerPools/private-worker-pool'
